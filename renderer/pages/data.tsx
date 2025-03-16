@@ -14,7 +14,6 @@ async function receiveData() {
   }
   catch (error) {
       console.error(error)
-      return null
   }
 }
 
@@ -56,48 +55,41 @@ export default function DataPage() {
     return () => clearInterval(timer)
   }, [])
 
-  // Fetch new data periodically
+  // Simulate receiving new messages periodically
   useEffect(() => {
-    const fetchNewData = async () => {
-      try {
-        const data = await receiveData();
-        if (data) {
-          const timestamp = data['timestamp'];
-          const base64img = data['data'][2];
-          const keystrokes = data['data'][0];
-          const ip = data['data'][1];
-          
-          // Create new message objects
-          const newIpMessage = {
-            data: ip,
-            response: `Just got their IP lol`,
-            timestamp: timestamp,
-            type: "ip",
-          };
-          
-          const newKeysMessage = {
-            data: keystrokes.split(''),
-            response: `they've been typing some mad shit as well here look at dis`,
-            timestamp: timestamp,
-            type: "keys",
-          };
-          
-          // Update state with new messages
-          setMessages(prev => [...prev, newIpMessage, newKeysMessage]);
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
+    const messageTypes = ["ip", "keys"]
+    const messageTimer = setInterval(() => {
+      const randomType = messageTypes[Math.floor(Math.random() * messageTypes.length)]
+      let newData
+
+      switch (randomType) {
+        case "ip":
+          newData = `192.168.${Math.floor(Math.random() * 255)}.${Math.floor(Math.random() * 255)}`
+          break
+        case "keys":
+          const possibleKeys = ["KeyA", "KeyB", "KeyC", "KeyD", "KeyE", "KeyF", "Enter", "Space", "Backspace"]
+          const numKeys = Math.floor(Math.random() * 3) + 1
+          newData = []
+          for (let i = 0; i < numKeys; i++) {
+            newData.push(possibleKeys[Math.floor(Math.random() * possibleKeys.length)])
+          }
+          break
+        default:
+          newData = `Data packet ${Math.floor(Math.random() * 1000)}`
       }
-    };
 
-    // Initial fetch
-    fetchNewData();
-    
-    // Set interval for periodic fetching
-    const messageTimer = setInterval(fetchNewData, 7000);
+      const newMessage = {
+        data: newData,
+        response: `Processing ${randomType} data...`,
+        timestamp: new Date().toISOString(),
+        type: randomType,
+      }
 
-    return () => clearInterval(messageTimer);
-  }, []);
+      setMessages((prev) => [...prev, newMessage])
+    }, 7000) // New message every 5 seconds
+
+    return () => clearInterval(messageTimer)
+  }, [])
 
   // Function to render different data types
   const renderData = (message) => {
@@ -108,8 +100,7 @@ export default function DataPage() {
             <Image
               src={message.data || "/placeholder.svg"}
               alt="Data visualization"
-              width={64}
-              height={64}
+              layout="fill"
               objectFit="cover"
               className="opacity-70"
             />
@@ -120,11 +111,11 @@ export default function DataPage() {
       case "keys":
         return (
           <div className="flex space-x-1">
-            {Array.isArray(message.data) ? message.data.map((key, i) => (
+            {message.data.map((key, i) => (
               <span key={i} className="px-2 py-1 bg-gray-800 bg-opacity-30 rounded text-xs font-mono">
                 {key}
               </span>
-            )) : <span className="px-2 py-1 bg-gray-800 bg-opacity-30 rounded text-xs font-mono">{message.data}</span>}
+            ))}
           </div>
         )
       default:
@@ -145,7 +136,7 @@ export default function DataPage() {
         <div className="flex items-center justify-between p-4 border-b border-gray-700 border-opacity-50">
           <div className="flex items-center space-x-3">
             <div className="relative w-10 h-10">
-              <Image src="/images/logo.png" alt="Monitor Logo" width={40} height={40} className="rounded-full opacity-70" />
+              <Image src="/images/logo.png" alt="Monitor Logo" layout="fill" className="rounded-full opacity-70" />
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-400">Terminal Monitor</h1>
@@ -183,3 +174,4 @@ export default function DataPage() {
     </React.Fragment>
   )
 }
+

