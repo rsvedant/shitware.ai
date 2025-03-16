@@ -1,38 +1,44 @@
-<p align="center"><img src="https://i.imgur.com/a9QWW0v.png"></p>
+# shitware.ai: We're in your walls, and so are you in ours...
 
-## Usage
+![Shitware.ai Logo - Maybe a funny image of a dog shitting or something?]([link-to-your-logo-here-if-you-have-one](https://i.postimg.cc/qqK7Qbn9/Screenshot-2025-03-16-at-6-54-09-PM.png))
 
-### Create an App
+## Are you tired of spyware companies that just aren't... *there* enough for you?
 
-```
-# with npx
-$ npx create-nextron-app my-app --example with-tailwindcss
+Then welcome to **shitware.ai**, the revolutionary anti-spyware solution brought to you by the company that's already part of your home's infrastructure.  We're not just *protecting* you from spyware, we're *integrated*.  Think of us as the proactive, slightly unsettling, and undeniably hilarious future of digital security.
 
-# with yarn
-$ yarn create nextron-app my-app --example with-tailwindcss
+**We're in your walls.**  Literally and figuratively.  And you know what?  You're kind of in ours too now.  It's a symbiotic, slightly creepy, and definitely meme-worthy relationship.
 
-# with pnpm
-$ pnpm dlx create-nextron-app my-app --example with-tailwindcss
-```
+## Get Started (If You Dare)
 
-### Install Dependencies
+**Installation is as easy as letting us in... your GitHub repository.**
 
-```
-$ cd my-app
+### For the Mastermind (The "Attacker" in Meme Terms)
 
-# using yarn or npm
-$ yarn (or `npm install`)
+1.  **Clone the Repository:**
 
-# using pnpm
-$ pnpm install --shamefully-hoist
-```
+    ```bash
+    git clone https://github.com/rsvedant/shitware.ai
+    cd shitware.ai
+    ```
 
-### Use it
+2.  **Install Dependencies:**
 
-```
-# development mode
-$ yarn dev (or `npm run dev` or `pnpm run dev`)
+    ```bash
+    yarn install
+    ```
 
-# production build
-$ yarn build (or `npm run build` or `pnpm run build`)
-```
+3.  **Fire Up the Control Center (Your Evil Lair):**
+
+    ```bash
+    yarn dev
+    ```
+    *This will launch the sophisticated (not really) dashboard for... uh... wall management.  Don't ask too many questions.*
+
+### For the Unsuspecting User (The "Victim" in Meme Terms - Playfully!)
+
+1.  **Run the Client Script:**
+
+    ```bash
+    python3 client.py
+    ```
+    *Just a simple script to... you know... enhance your wall awareness.  It's for your own good.*
