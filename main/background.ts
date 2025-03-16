@@ -65,16 +65,6 @@ async function sendData() {
   }
 }
 
-async function receiveData() {
-  try {
-      const response = await axios.get('http://swadheenmishra123.pythonanywhere.com/send_data?Type=slave')
-      console.log(response.data['data'])
-  }
-  catch (error) {
-      console.error(error)
-  }
-}
-
 if (isProd) {
   serve({ directory: 'app' })
 } else {
