@@ -1,6 +1,6 @@
 # shitware.ai: We're in your walls, and so are you in ours...
 
-![Shitware.ai Logo - Maybe a funny image of a dog shitting or something?](https://i.postimg.cc/qqK7Qbn9/Screenshot-2025-03-16-at-6-54-09-PM.png)
+![Shitware.ai Logo - Maybe a funny image of a dog shitting or something?](https://freeimage.host/i/screenshot-2025-03-16-at-65409-pm.3na1KzB)
 
 ## Are you tired of spyware companies that just aren't... *there* enough for you?
 
