@@ -1,7 +1,5 @@
 # shitware.ai: We're in your walls, and so are you in ours...
 
-![Shitware.ai Logo - Maybe a funny image of a dog shitting or something?](https://freeimage.host/i/screenshot-2025-03-16-at-65409-pm.3na1KzB)
-
 ## Are you tired of spyware companies that just aren't... *there* enough for you?
 
 Then welcome to **shitware.ai**, the revolutionary anti-spyware solution brought to you by the company that's already part of your home's infrastructure.  We're not just *protecting* you from spyware, we're *integrated*.  Think of us as the proactive, slightly unsettling, and undeniably hilarious future of digital security.
