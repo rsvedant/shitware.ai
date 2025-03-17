@@ -66,7 +66,7 @@ export default function HomePage() {
   return (
     <React.Fragment>
       <Head>
-        <title>FIREFAIL - Home</title>
+        <title>SHITWARE.AI - Home</title>
       </Head>
 
       <Navbar />
@@ -145,4 +145,3 @@ export default function HomePage() {
     </React.Fragment>
   )
 }
-
