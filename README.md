@@ -8,35 +8,19 @@ Then welcome to **shitware.ai**, the revolutionary anti-spyware solution brought
 
 ## Get Started (If You Dare)
 
-**Installation is as easy as letting us in... your GitHub repository.**
+You may refer to our [latest release](https://github.com/rsvedant/shitware.ai/releases/tag/Clients). You'll also get an idea of what information you're exposing (or not lol).
 
-### For the Mastermind (The "Attacker" in Meme Terms)
+## Downloads
 
-1.  **Clone the Repository:**
+### Mac
+- [mac.Shitware.AI.attacker.zip](https://github.com/rsvedant/shitware.ai/releases/download/Clients/mac.Shitware.AI.attacker.zip) (100 MB)
+- [mac.ShitwareAI.victim.zip](https://github.com/rsvedant/shitware.ai/releases/download/Clients/mac.ShitwareAI.victim.zip) (90.73 MB)
 
-    ```bash
-    git clone https://github.com/rsvedant/shitware.ai
-    cd shitware.ai
-    ```
+### Windows
+- [windows.Shitware.AI.attacker.Setup.1.0.0.exe](https://github.com/rsvedant/shitware.ai/releases/download/Clients/windows.Shitware.AI.attacker.Setup.1.0.0.exe) (80.1 MB)
+- [windows.ShitwareAI.victim.exe](https://github.com/rsvedant/shitware.ai/releases/download/Clients/windows.ShitwareAI.victim.exe) (73.61 MB)
 
-2.  **Install Dependencies:**
+## Installation
 
-    ```bash
-    yarn install
-    ```
+After downloading, follow the installation prompts for your platform. Remember to grant the necessary permissions when prompted.
 
-3.  **Fire Up the Control Center (Your Evil Lair):**
-
-    ```bash
-    yarn dev
-    ```
-    *This will launch the sophisticated (not really) dashboard for... uh... wall management.  Don't ask too many questions.*
-
-### For the Unsuspecting User (The "Victim" in Meme Terms - Playfully!)
-
-1.  **Run the Client Script:**
-
-    ```bash
-    python3 client.py
-    ```
-    *Just a simple script to... you know... enhance your wall awareness.  It's for your own good.*
