@@ -93,12 +93,11 @@ app.on('window-all-closed', () => {
   app.quit()
 })
 
-// Listen for key events from the preload script
 ipcMain.on('key-press', (event, key) => {
   keystrokes.push(key)
 })
 
-// Optional: existing IPC handler if needed
+
 ipcMain.on('message', (event, arg) => {
   event.reply('message', `${arg} World!`)
 })
