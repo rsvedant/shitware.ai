@@ -1,9 +1,9 @@
 {
   "private": true,
-  "name": "my-nextron-app",
-  "description": "My application description",
+  "name": "Shitware.AI",
+  "description": "We are in your walls... and so are you in ours.",
   "version": "1.0.0",
-  "author": "Yoshihide Shiono <shiono.yoshihide@gmail.com>",
+  "author": "Shitware Labs <singh.vedant1@icloud.com>",
   "main": "app/background.js",
   "scripts": {
     "dev": "nextron",
