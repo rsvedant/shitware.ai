@@ -1,6 +1,6 @@
 appId: com.example.nextron
-productName: My Nextron App
-copyright: Copyright © 2018 Yoshihide Shiono
+productName: Shitware.AI
+copyright: Copyright © 2025 Shitware.AI
 directories:
   output: dist
   buildResources: resources
