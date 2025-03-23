@@ -1,9 +1,5 @@
 # Shitware.AI: We're in your walls, and so are you in ours...
 
-<p align="center">
-  <img src="https://media.discordapp.net/attachments/1350393980470169650/1350825808800780439/Screenshot_2025-03-16_at_6.54.09_PM.png?ex=67d97791&is=67d82611&hm=33a71adbafd70a35a02e9f639037aab166941c8ca625c70a60af93a13e98bc07&=&format=webp&quality=lossless&width=256&height=256" alt="yes this is an image of a dog pooping because our project is.. get it? shit." />
-</p>
-
 ## Are you tired of spyware companies that just aren't... *there* enough for you?
 
 Then welcome to **shitware.ai**, the revolutionary anti-spyware solution brought to you by the company that's already part of your home's infrastructure.  We're not just *protecting* you from spyware, we're *integrated*.  Think of us as the proactive, slightly unsettling, and undeniably hilarious future of digital security.
